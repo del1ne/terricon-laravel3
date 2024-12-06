@@ -1,6 +1,6 @@
 <?php
 
-//gut устоновлен
+//git устоновлен
 
 use Illuminate\Support\Facades\Route;
 
