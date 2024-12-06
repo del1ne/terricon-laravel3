@@ -1,5 +1,7 @@
 <?php
 
+//gut устоновлен
+
 use Illuminate\Support\Facades\Route;
 
 use App\Models\Skill;
