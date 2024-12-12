@@ -12,9 +12,9 @@
 					<div class="block">
 						<div class="info-block">
 							<hr>
-						    <a href="https://t.me/owner_del1ne" rel="nofollow" class="link">->Осмотреть<-</a> мои разроботки у меня в портфолио.
+						    <a href="https://t.me/owner_del1ne" rel="nofollow" class="link">->Осмотреть<-</a> мои разработки у меня в портфолио.
                                 <br>
-								Можите заказать у меня сайт только кликнув на кнопку заказать.
+								Можите заказать у меня разработку сайт только кликнув на кнопку заказать.
 								<hr>
 						</div>
 						<a href="https://t.me/mazaretto" class="button" rel="nofollow">Заказать</a>
@@ -36,10 +36,11 @@
 													<div class="info">
 														<div class="wrapper">
 															<div class="date">
-																<span>may</span><strong>15</strong>
+															 <span>{{ date('M', strtotime($post->created_at)); }}</span>
+															 <strong>{{ date('d', strtotime($post->created_at)); }}</strong>
 															</div>
 															<a href="{{ route('pages', ['name' => 'post', 'post_id' => $post->id]) }}"><strong>{{ $post->name }}</strong></a><br>
-														Author: <strong>{{ $post->user_id }}</strong>
+														Автор: <strong>{{ \App\Models\User::getName($post->user_id) }}</strong>
 														</div>
 														
 													</div>
@@ -68,7 +69,8 @@
 												<li><a href="{{ route('pages', [
 													'name' => 'blog',
 													'category_id' => $category->id
-												]) }}">{{ $category->name }}</a></li>
+												
+												 ]) }}">{{ $category->name }} ({{ \App\Models\Post::where('category_id', $category->id)->count(); }})</a></li>
 											@endforeach
 										@endif
 									</ul>

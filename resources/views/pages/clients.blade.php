@@ -12,9 +12,9 @@
 					<div class="block">
 						<div class="info-block">
 							<hr>
-						    <a href="https://t.me/owner_del1ne" rel="nofollow" class="link">->Осмотреть<-</a> мои разроботки у меня в портфолио.
+						    <a href="https://t.me/owner_del1ne" rel="nofollow" class="link">->Осмотреть<-</a> мои разработки у меня в портфолио.
                                 <br>
-								Можите заказать у меня сайт только кликнув на кнопку заказать.
+								Можите заказать у меня разработку сайт только кликнув на кнопку заказать.
 								<hr>
 						</div>
 						<a href="https://t.me/mazaretto" class="button" rel="nofollow">Заказать</a>
